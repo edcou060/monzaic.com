@@ -1,0 +1,795 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Monzaic</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDggNDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTQyLjQzNzkgNDRDNDIuNDM3OSA0NCAzNi4wNzQ0IDMzLjkwMzggNDEuMTY5MiAyNEM0Ni44NjI0IDEyLjkzMzYgNDIuMjA3OCA0IDQyLjIwNzggNEw3LjAxMTM0IDRDNC4wMTEzNCA0IDExLjY1NzcgMTIuOTMyIDUuOTY5MTIgMjMuOTk2OUMwLjg3NjI3MyAzMy45MDI5IDcuMjcwOTQgNDQgNy4yNzA5NCA0NEw0Mi40Mzc5IDQ0WiIgZmlsbD0iIzE5ODBlNiIvPjwvc3ZnPg==" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#1980e6">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#111a22] dark group/design-root overflow-x-hidden"
+      style="font-family: Manrope, 'Noto Sans', sans-serif"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#243647] px-4 md:px-10 py-3 bg-[#111a22]">
+            <div class="flex items-center gap-4 text-white">
+              <a href="index.html" class="flex items-center gap-4 text-white hover:text-[#1980e6] transition-colors duration-200">
+                <div class="size-4">
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Monzaic</h2>
+              </a>
+            </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div id="mobile-menu" class="hidden md:flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="prices.html">Services</a>
+              <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="portfolio.html">Portfolio</a>
+              <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="blog.html">Blog</a>
+              <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="about-us.html">About Us</a>
+              <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="contact.html">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+            <a href="get-started.html">
+              <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#1980e6] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#1463b5] transition-colors duration-200">
+                <span class="truncate">Get Started</span>
+              </button>
+            </a>
+          </div>
+        </header>
+        <div class="px-4 md:px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <h2
+              class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-1 pt-2"
+            >
+              Services
+            </h2>
+            <h1
+              class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 text-left pb-1 pt-2"
+            >
+              Custom Web Development
+            </h1>
+            <p
+              class="text-white text-base font-normal leading-normal pb-2 pt-1 px-4"
+            >
+              From startups to enterprises, we'll help you build a custom web
+              app with a wow factor. Our team of 100+ full-stack developers and
+              designers will bring your vision to life.
+            </p>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4"
+            >
+              <div
+                class="flex flex-1 flex-col gap-4 rounded-xl border border-solid border-[#344d65] bg-[#1a2632] p-6"
+              >
+                <div class="flex flex-col gap-1">
+                  <div class="flex items-center justify-between">
+                    <h1 class="text-white text-base font-bold leading-tight">
+                      Starter
+                    </h1>
+                    <p
+                      class="text-white text-xs font-medium leading-normal tracking-[0.015em] rounded-xl bg-[#1980e6] px-3 py-[3px] text-center"
+                    >
+                      Popular
+                    </p>
+                  </div>
+                  <p class="flex items-baseline gap-1 text-white">
+                    <span
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em]"
+                      >$5,000</span
+                    >
+                    <span class="text-white text-base font-bold leading-tight"
+                      >One Time</span
+                    >
+                  </p>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Static site generation
+                  </div>
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Content management system
+                  </div>
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    SEO optimization
+                  </div>
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Mobile responsiveness
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-1 flex-col gap-4 rounded-xl border border-solid border-[#344d65] bg-[#1a2632] p-6"
+              >
+                <div class="flex flex-col gap-1">
+                  <h1 class="text-white text-base font-bold leading-tight">
+                    Pro
+                  </h1>
+                  <p class="flex items-baseline gap-1 text-white">
+                    <span
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em]"
+                      >$10,000</span
+                    >
+                    <span class="text-white text-base font-bold leading-tight"
+                      >One Time</span
+                    >
+                  </p>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Everything in Starter
+                  </div>
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    E-commerce functionality
+                  </div>
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    User authentication
+                  </div>
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Database integration
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-1 flex-col gap-4 rounded-xl border border-solid border-[#344d65] bg-[#1a2632] p-6"
+              >
+                <div class="flex flex-col gap-1">
+                  <div class="flex items-center justify-between">
+                    <h1 class="text-white text-base font-bold leading-tight">
+                      Premium
+                    </h1>
+                    <p
+                      class="text-white text-xs font-medium leading-normal tracking-[0.015em] rounded-xl bg-[#1980e6] px-3 py-[3px] text-center"
+                    >
+                      Best Value
+                    </p>
+                  </div>
+                  <p class="flex items-baseline gap-1 text-white">
+                    <span
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em]"
+                      >$20,000</span
+                    >
+                    <span class="text-white text-base font-bold leading-tight"
+                      >One Time</span
+                    >
+                  </p>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Everything in Pro
+                  </div>
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Real-time chat features
+                  </div>
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Custom analytics dashboard
+                  </div>
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    API integrations
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h1
+              class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 text-left pb-2 pt-3"
+            >
+              Website Maintenance
+            </h1>
+            <p
+              class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4"
+            >
+              Keep your website running smoothly with our ongoing maintenance
+              services. We'll take care of everything from security updates to
+              content changes, so you can focus on growing your business.
+            </p>
+            <div
+              class="grid grid-cols-[repeat(auto-fit,minmax(228px,1fr))] gap-2.5 px-4 py-3 @3xl:grid-cols-4"
+            >
+              <div
+                class="flex flex-1 flex-col gap-4 rounded-xl border border-solid border-[#344d65] bg-[#1a2632] p-6"
+              >
+                <div class="flex flex-col gap-1">
+                  <h1 class="text-white text-base font-bold leading-tight">
+                    Basic
+                  </h1>
+                  <p class="flex items-baseline gap-1 text-white">
+                    <span
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em]"
+                      >$500</span
+                    >
+                    <span class="text-white text-base font-bold leading-tight"
+                      >Per Month</span
+                    >
+                  </p>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Weekly security scans
+                  </div>
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Plugin updates
+                  </div>
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Monthly performance reports
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-1 flex-col gap-4 rounded-xl border border-solid border-[#344d65] bg-[#1a2632] p-6"
+              >
+                <div class="flex flex-col gap-1">
+                  <div class="flex items-center justify-between">
+                    <h1 class="text-white text-base font-bold leading-tight">
+                      Standard
+                    </h1>
+                    <p
+                      class="text-white text-xs font-medium leading-normal tracking-[0.015em] rounded-xl bg-[#1980e6] px-3 py-[3px] text-center"
+                    >
+                      Popular
+                    </p>
+                  </div>
+                  <p class="flex items-baseline gap-1 text-white">
+                    <span
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em]"
+                      >$1,000</span
+                    >
+                    <span class="text-white text-base font-bold leading-tight"
+                      >Per Month</span
+                    >
+                  </p>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Everything in Basic
+                  </div>
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Daily backups
+                  </div>
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    24/7 monitoring
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-1 flex-col gap-4 rounded-xl border border-solid border-[#344d65] bg-[#1a2632] p-6"
+              >
+                <div class="flex flex-col gap-1">
+                  <div class="flex items-center justify-between">
+                    <h1 class="text-white text-base font-bold leading-tight">
+                      Premium
+                    </h1>
+                    <p
+                      class="text-white text-xs font-medium leading-normal tracking-[0.015em] rounded-xl bg-[#1980e6] px-3 py-[3px] text-center"
+                    >
+                      Best Value
+                    </p>
+                  </div>
+                  <p class="flex items-baseline gap-1 text-white">
+                    <span
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em]"
+                      >$2,000</span
+                    >
+                    <span class="text-white text-base font-bold leading-tight"
+                      >Per Month</span
+                    >
+                  </p>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Everything in Standard
+                  </div>
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Uptime guarantee
+                  </div>
+                  <div
+                    class="text-[13px] font-normal leading-normal flex gap-3 text-white"
+                  >
+                    <div
+                      class="text-white"
+                      data-icon="Check"
+                      data-size="20px"
+                      data-weight="regular"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    Priority support
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        console.log('Script loaded');
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        console.log('menuButton:', menuButton);
+        console.log('mobileMenu:', mobileMenu);
+        
+        if (!menuButton || !mobileMenu) {
+          console.error('Menu elements not found!');
+          return;
+        }
+
+        menuButton.addEventListener('click', toggleMenu);
+        menuButton.addEventListener('touchend', function(e) {
+          e.preventDefault();
+          toggleMenu();
+        });
+
+        function toggleMenu() {
+          console.log('Toggle menu clicked');
+          
+          if (mobileMenu.classList.contains('hidden')) {
+            console.log('Showing menu');
+            mobileMenu.classList.remove('hidden');
+            mobileMenu.classList.add(
+              'flex',
+              'flex-col',
+              'absolute',
+              'top-16',
+              'left-0',
+              'right-0',
+              'bg-[#111a22]',
+              'p-4',
+              'border-b',
+              'border-[#243647]',
+              'z-50',
+              'gap-2'
+            );
+          } else {
+            console.log('Hiding menu');
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove(
+              'flex',
+              'flex-col',
+              'absolute',
+              'top-16',
+              'left-0',
+              'right-0',
+              'bg-[#111a22]',
+              'p-4',
+              'border-b',
+              'border-[#243647]',
+              'z-50',
+              'gap-2'
+            );
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

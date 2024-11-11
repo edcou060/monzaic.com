@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Monzaic</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDggNDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTQyLjQzNzkgNDRDNDIuNDM3OSA0NCAzNi4wNzQ0IDMzLjkwMzggNDEuMTY5MiAyNEM0Ni44NjI0IDEyLjkzMzYgNDIuMjA3OCA0IDQyLjIwNzggNEw3LjAxMTM0IDRDNC4wMTEzNCA0IDExLjY1NzcgMTIuOTMyIDUuOTY5MTIgMjMuOTk2OUMwLjg3NjI3MyAzMy45MDI5IDcuMjcwOTQgNDQgNy4yNzA5NCA0NEw0Mi40Mzc5IDQ0WiIgZmlsbD0iIzE5ODBlNiIvPjwvc3ZnPg==" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#1980e6">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#111a22] dark group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#243647] px-4 md:px-10 py-3 bg-[#111a22]">
+          <div class="flex items-center gap-4 text-white">
+            <a href="index.html" class="flex items-center gap-4 text-white hover:text-[#1980e6] transition-colors duration-200">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Monzaic</h2>
+            </a>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div id="mobile-menu" class="hidden md:flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="prices.html">Services</a>
+              <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="portfolio.html">Portfolio</a>
+              <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="blog.html">Blog</a>
+              <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="about-us.html">About Us</a>
+              <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="contact.html">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+            <a href="get-started.html">
+              <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#1980e6] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#1463b5] transition-colors duration-200">
+                <span class="truncate">Get Started</span>
+              </button>
+            </a>
+          </div>
+        </header>
+        <div class="flex flex-col md:flex-row gap-1 px-4 md:px-6 py-5">
+          <div class="layout-content-container flex flex-col max-w-[920px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">Our blog</p></div>
+            <div class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/3dc4513c-d8b7-4f0e-84a5-582ae4c4870e.png");'
+              ></div>
+              <div class="flex flex-col justify-center">
+                <p class="text-white text-base font-medium leading-normal line-clamp-1">Monogram</p>
+                <p class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">
+                    Monogram is a tech newsletter dedicated to making the web faster and more beautiful. We share insights on high-quality websites and web applications using composable architecture. Improve your SEO, ROI, and brand strength with Monogram.   </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/2df0cd5e-2f8b-4d1a-986c-222cb50eead7.png");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">What is a Composable Website?</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <div class="flex flex-col gap-1">
+                      <p class="text-[#93adc8] text-base font-normal leading-normal">
+                        Composable Websites are built by assembling pre-built components from various sources into a single website. This approach makes it possible to create
+                        highly performant, scalable, and flexible websites that deliver a better user experience and drive business results.
+                      </p>
+                      <p class="text-[#93adc8] text-base font-normal leading-normal">Jun 10, 2022 · 5 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/stability/53722040-f936-4e86-8c4c-5f6727a279f6.png");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">The Business Case for Composable Websites</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <div class="flex flex-col gap-1">
+                      <p class="text-[#93adc8] text-base font-normal leading-normal">
+                        Composable Websites offer numerous benefits that can help businesses achieve their goals more effectively. From faster time-to-market to lower costs and
+                        higher conversion rates, this article explores the compelling reasons why companies should consider adopting this modern approach to web development.
+                      </p>
+                      <p class="text-[#93adc8] text-base font-normal leading-normal">Jun 3, 2022 · 6 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/stability/c2902702-c208-4407-a965-245f712451e1.png");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">How to Choose the Right Headless CMS for Your Project</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <div class="flex flex-col gap-1">
+                      <p class="text-[#93adc8] text-base font-normal leading-normal">
+                        Selecting the right Headless CMS is crucial for the success of your web development project. This guide provides valuable insights into the key factors to
+                        consider when evaluating different options and offers practical tips to help you make an informed decision.
+                      </p>
+                      <p class="text-[#93adc8] text-base font-normal leading-normal">May 27, 2022 · 7 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/stability/0b6c09b8-0ab2-43bb-9809-a54c659ed9ca.png");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">The Future of Web Development: Composable Architecture</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <div class="flex flex-col gap-1">
+                      <p class="text-[#93adc8] text-base font-normal leading-normal">
+                        Composable Architecture represents a paradigm shift in web development, enabling developers to build highly modular, reusable, and scalable web
+                        applications. This article delves into the principles, benefits, and real-world use cases of this transformative approach, shedding light on the future of
+                        web development.
+                      </p>
+                      <p class="text-[#93adc8] text-base font-normal leading-normal">May 20, 2022 · 8 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/ac6a7a4a-ed15-4af8-a192-7dd493c9d020.png");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Unleashing the Power of Jamstack with Prismic and Vercel</p>
+                  <div class="flex  items-end gap-3 justify-between">
+                    <div class="flex flex-col gap-1">
+                      <p  class="text-[#93adc8] text-base font-normal leading-normal">
+                        Jamstack, Prismic, and Vercel are a winning combination for building fast, secure, and dynamic websites. In this article, we explore the synergies between
+                        these technologies and provide insights into how they can be leveraged to create cutting-edge web experiences that delight users and drive business growth.
+                      </p>
+                      <p class="text-[#93adc8] text-base font-normal leading-normal">May 13, 2022 · 9 min read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-center p-4">
+              <a href="#" class="flex size-10 items-center justify-center">
+                <div class="text-white" data-icon="CaretLeft" data-size="18px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
+                  </svg>
+                </div>
+              </a>
+              <a class="text-sm font-bold leading-normal tracking-[0.015em] flex size-10 items-center justify-center text-white rounded-full bg-[#243647]" href="#">1</a>
+              <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-white rounded-full" href="#">2</a>
+              <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-white rounded-full" href="#">3</a>
+              <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-white rounded-full" href="#">4</a>
+              <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-white rounded-full" href="#">5</a>
+              <a href="#" class="flex size-10 items-center justify-center">
+                <div class="text-white" data-icon="CaretRight" data-size="18px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="layout-content-container hidden md:flex flex-col w-full md:w-[360px]">
+            <div class="px-4 py-3">
+              <label class="flex flex-col min-w-40 h-12 w-full">
+                <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                  <div
+                    class="text-[#93adc8] flex border-none bg-[#243647] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                    data-icon="MagnifyingGlass"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <input
+                    placeholder="Search our blog"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#243647] focus:border-none h-full placeholder:text-[#93adc8] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                    value=""
+                  />
+                </div>
+              </label>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Categories</h3>
+            <div class="flex gap-3 p-3 flex-wrap pr-4">
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#243647] pl-4 pr-4">
+                <p class="text-white text-sm font-medium leading-normal">Technology</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#243647] pl-4 pr-4">
+                <p class="text-white text-sm font-medium leading-normal">Web Development</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#243647] pl-4 pr-4">
+                <p class="text-white text-sm font-medium leading-normal">Headless CMS</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#243647] pl-4 pr-4">
+                <p class="text-white text-sm font-medium leading-normal">Composable Architecture</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#243647] pl-4 pr-4">
+                <p class="text-white text-sm font-medium leading-normal">Jamstack</p>
+              </div>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Popular posts</h3>
+            <div class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2 justify-between">
+              <div class="flex flex-col justify-center">
+                <p class="text-white text-base font-medium leading-normal line-clamp-1">What is a Composable Website?</p>
+                <p class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">
+                  Composable Websites are built by assembling pre-built components from various sources into a single website. This approach makes it possible to create highly
+                  performant, scalable, and flexible websites that deliver a better user experience and drive business results.
+                </p>
+              </div>
+              <div class="shrink-0">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#243647] text-white text-sm font-medium leading-normal w-fit"
+                >
+                  <span class="truncate">Read more</span>
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2 justify-between">
+              <div class="flex flex-col justify-center">
+                <p class="text-white text-base font-medium leading-normal line-clamp-1">The Business Case for Composable Websites</p>
+                <p class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">
+                  Composable Websites offer numerous benefits that can help businesses achieve their goals more effectively. From faster time-to-market to lower costs and higher
+                  conversion rates, this article explores the compelling reasons why companies should consider adopting this modern approach to web development.
+                </p>
+              </div>
+              <div class="shrink-0">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#243647] text-white text-sm font-medium leading-normal w-fit"
+                >
+                  <span class="truncate">Read more</span>
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2 justify-between">
+              <div class="flex flex-col justify-center">
+                <p class="text-white text-base font-medium leading-normal line-clamp-1">How to Choose the Right Headless CMS for Your Project</p>
+                <p class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">
+                  Selecting the right Headless CMS is crucial for the success of your web development project. This guide provides valuable insights into the key factors to
+                  consider when evaluating different options and offers practical tips to help you make an informed decision.
+                </p>
+              </div>
+              <div class="shrink-0">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#243647] text-white text-sm font-medium leading-normal w-fit"
+                >
+                  <span class="truncate">Read more</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        console.log('Script loaded');
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        console.log('menuButton:', menuButton);
+        console.log('mobileMenu:', mobileMenu);
+        
+        if (!menuButton || !mobileMenu) {
+          console.error('Menu elements not found!');
+          return;
+        }
+
+        menuButton.addEventListener('click', toggleMenu);
+        menuButton.addEventListener('touchend', function(e) {
+          e.preventDefault();
+          toggleMenu();
+        });
+
+        function toggleMenu() {
+          console.log('Toggle menu clicked');
+          if (mobileMenu.classList.contains('hidden')) {
+            console.log('Showing menu');
+            mobileMenu.classList.remove('hidden');
+            mobileMenu.classList.add(
+              'flex',
+              'flex-col',
+              'absolute',
+              'top-16',
+              'left-0',
+              'right-0',
+              'bg-[#111a22]',
+              'p-4',
+              'border-b',
+              'border-[#243647]',
+              'z-50',
+              'gap-2'
+            );
+          } else {
+            console.log('Hiding menu');
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove(
+              'flex',
+              'flex-col',
+              'absolute',
+              'top-16',
+              'left-0',
+              'right-0',
+              'bg-[#111a22]',
+              'p-4',
+              'border-b',
+              'border-[#243647]',
+              'z-50',
+              'gap-2'
+            );
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

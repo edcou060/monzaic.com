@@ -1,0 +1,268 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Monzaic</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDggNDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTQyLjQzNzkgNDRDNDIuNDM3OSA0NCAzNi4wNzQ0IDMzLjkwMzggNDEuMTY5MiAyNEM0Ni44NjI0IDEyLjkzMzYgNDIuMjA3OCA0IDQyLjIwNzggNEw3LjAxMTM0IDRDNC4wMTEzNCA0IDExLjY1NzcgMTIuOTMyIDUuOTY5MTIgMjMuOTk2OUMwLjg3NjI3MyAzMy45MDI5IDcuMjcwOTQgNDQgNy4yNzA5NCA0NEw0Mi40Mzc5IDQ0WiIgZmlsbD0iIzE5ODBlNiIvPjwvc3ZnPg==" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#1980e6">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#111a22] dark group/design-root overflow-x-hidden"
+      style="font-family: Manrope, 'Noto Sans', sans-serif"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#243647] px-4 md:px-10 py-3 bg-[#111a22]">
+          <div class="flex items-center gap-4 text-white">
+            <a href="index.html" class="flex items-center gap-4 text-white hover:text-[#1980e6] transition-colors duration-200">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Monzaic</h2>
+            </a>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div id="mobile-menu" class="hidden md:flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="prices.html">Services</a>
+              <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="portfolio.html">Portfolio</a>
+              <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="blog.html">Blog</a>
+              <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="about-us.html">About Us</a>
+              <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="contact.html">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+            <a href="get-started.html">
+              <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#1980e6] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#1463b5] transition-colors duration-200">
+                <span class="truncate">Get Started</span>
+              </button>
+            </a>
+          </div>
+        </header>
+        <div class="px-4 md:px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:px-4 @[480px]:py-3">
+                <div
+                  class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-[#111a22] @[480px]:rounded-xl min-h-[218px]"
+                  style="
+                    background-image: url('https://cdn.usegalileo.ai/sdxl10/7b8ee498-9a14-4145-a9d8-86d3d10052fa.png');
+                  "
+                ></div>
+              </div>
+            </div>
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <p
+                class="text-white tracking-light text-[32px] font-bold leading-tight min-w-72"
+              >
+                We're on a mission to build the future of the web.
+              </p>
+            </div>
+            <div class="flex p-4 @container">
+              <div
+                class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center"
+              >
+                <div class="flex gap-4">
+                  <div
+                    class="flex items-center justify-center bg-[#243647] aspect-square rounded-full min-h-32 w-32"
+                  >
+                    <svg class="size-20 text-white" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col justify-center">
+                    <p class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">
+                      Monzaic
+                    </p>
+                    <p class="text-[#93adc8] text-base font-normal leading-normal">
+                      Digital agency building composable websites &amp; web apps
+                    </p>
+                  </div>
+                </div>
+                <div class="flex w-full max-w-[480px] gap-3 @[480px]:w-auto">
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#243647] text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto"
+                  >
+                    <span class="truncate">Follow</span>
+                  </button>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#1980e6] text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto"
+                  >
+                    <span class="truncate">Contact</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <h2
+              class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              Meet the team
+            </h2>
+            <div
+              class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2"
+            >
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                style="
+                  background-image: url('https://cdn.usegalileo.ai/stability/20259d45-bac2-4c40-9326-4b74b553b24b.png');
+                "
+              ></div>
+              <div class="flex flex-col justify-center">
+                <p
+                  class="text-white text-base font-medium leading-normal line-clamp-1"
+                >
+                  Edgar Coutiño
+                </p>
+                <p
+                  class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2"
+                >
+                  CEO
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2"
+            >
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                style="
+                  background-image: url('https://cdn.usegalileo.ai/stability/50eaac59-cae6-4dfc-b721-cf171f5077df.png');
+                "
+              ></div>
+              <div class="flex flex-col justify-center">
+                <p
+                  class="text-white text-base font-medium leading-normal line-clamp-1"
+                >
+                  Gustavo Coutiño
+                </p>
+                <p
+                  class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2"
+                >
+                  CFO
+                </p>
+              </div>
+            </div>
+
+            <h2
+              class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              Our story
+            </h2>
+            <p
+              class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4"
+            >
+            It all started in a small internet café in Tampico, Mexico. A high school student spent afternoons after school teaching himself web development, fueled by endless cups of café con leche and dreams bigger than the Gulf Coast horizon. While classmates headed to the beach, he was debugging code and building simple websites for local businesses - a small taqueria, a family flower shop, his school's parent association.
+
+            What began as a teenage side project grew into something more as word spread about the "kid programmer" who could bring small businesses into the digital age. By senior year, he was managing a growing client base while maintaining honor roll status. He saw firsthand how technology could transform family businesses and help them thrive in an increasingly digital world.
+
+            After graduating, he launched this company. With support from family and early clients who believed in his vision, he founded what would become Monzaic. The mission was simple but powerful: make professional web development accessible to businesses of all sizes, while maintaining the personal touch and understanding of community that defined those early days in Tampico.
+
+            Today, Monzaic has grown from a one-person operation to a global team, but we've never forgotten our roots. That same spirit of determination, creativity, and genuine desire to help businesses succeed continues to drive everything we do. Every website we build carries a piece of that teenage dreamer's passion, now amplified by years of experience and technological innovation.
+
+            </p>
+            <h2
+              class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              Our values
+            </h2>
+            <p
+              class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4"
+            >
+              Empower everyone to create for the web. We believe that everyone
+              should have the power to create for the web, regardless of their
+              technical skills or background. That's why we're building a
+              platform that makes it easy for anyone to design, build, and
+              launch their own websites. Be relentlessly focused on the
+              customer. We believe that the best products are built by people
+              who deeply understand and care about their customers. That's why
+              we're obsessed with listening to our customers, solving their
+              problems, and making their lives easier. Embrace change and take
+              risks. We believe that the only way to stay ahead in a
+              fast-changing world is to embrace change and take risks. That's
+              why we're constantly experimenting, learning, and evolving our
+              product and our company. We're not afraid to fail, because we know
+              that's the only way to succeed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        console.log('Script loaded');
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        console.log('menuButton:', menuButton);
+        console.log('mobileMenu:', mobileMenu);
+        
+        if (!menuButton || !mobileMenu) {
+          console.error('Menu elements not found!');
+          return;
+        }
+
+        menuButton.addEventListener('click', toggleMenu);
+        menuButton.addEventListener('touchend', function(e) {
+          e.preventDefault();
+          toggleMenu();
+        });
+
+        function toggleMenu() {
+          console.log('Toggle menu clicked');
+          if (mobileMenu.classList.contains('hidden')) {
+            console.log('Showing menu');
+            mobileMenu.classList.remove('hidden');
+            mobileMenu.classList.add(
+              'flex',
+              'flex-col',
+              'absolute',
+              'top-16',
+              'left-0',
+              'right-0',
+              'bg-[#111a22]',
+              'p-4',
+              'border-b',
+              'border-[#243647]',
+              'z-50',
+              'gap-2'
+            );
+          } else {
+            console.log('Hiding menu');
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove(
+              'flex',
+              'flex-col',
+              'absolute',
+              'top-16',
+              'left-0',
+              'right-0',
+              'bg-[#111a22]',
+              'p-4',
+              'border-b',
+              'border-[#243647]',
+              'z-50',
+              'gap-2'
+            );
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

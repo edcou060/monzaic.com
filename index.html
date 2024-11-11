@@ -1,0 +1,735 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Monzaic</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDggNDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTQyLjQzNzkgNDRDNDIuNDM3OSA0NCAzNi4wNzQ0IDMzLjkwMzggNDEuMTY5MiAyNEM0Ni44NjI0IDEyLjkzMzYgNDIuMjA3OCA0IDQyLjIwNzggNEw3LjAxMTM0IDRDNC4wMTEzNCA0IDExLjY1NzcgMTIuOTMyIDUuOTY5MTIgMjMuOTk2OUMwLjg3NjI3MyAzMy45MDI5IDcuMjcwOTQgNDQgNy4yNzA5NCA0NEw0Mi40Mzc5IDQ0WiIgZmlsbD0iIzE5ODBlNiIvPjwvc3ZnPg==" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#1980e6">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#111a22] dark group/design-root overflow-x-hidden"
+      style="font-family: Manrope, 'Noto Sans', sans-serif"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#243647] px-4 md:px-10 py-3 bg-[#111a22]">
+            <div class="flex items-center gap-4 text-white">
+              <a href="index.html" class="flex items-center gap-4 text-white hover:text-[#1980e6] transition-colors duration-200">
+                <div class="size-4">
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Monzaic</h2>
+              </a>
+            </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div id="mobile-menu" class="hidden md:flex items-center gap-9">
+              <a
+                class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2"
+                href="prices.html"
+                >Services</a>
+              <a
+                class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2"
+                href="portfolio.html"
+                >Portfolio</a>
+              <a
+                class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2"
+                href="blog.html"
+                >Blog</a>
+              <a
+                class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2"
+                href="about-us.html"
+                >About Us</a>
+              <a
+                class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2"
+                href="contact.html"
+                >Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+            <a href="get-started.html">
+              <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#1980e6] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#1463b5] transition-colors duration-200">
+                <span class="truncate">Get Started</span>
+              </button>
+            </a>
+          </div>
+        </header>
+        <div class="px-4 md:px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div class="flex flex-col md:flex-row min-h-[480px] bg-[#1a2630] @[480px]:rounded-xl p-4 md:p-8">
+                  <!-- Left Column -->
+                  <div class="flex flex-1 flex-col justify-center gap-6">
+                    <p class="text-[#1980e6] text-sm font-bold uppercase tracking-wider">Software Development Agency</p>
+                    <h1 class="text-white text-5xl font-black leading-tight tracking-[-0.033em]">
+                      Get 10x more clients with Monzaic
+                    </h1>
+                    <p class="text-[#93adc8] text-lg max-w-[500px]">
+                      At Monzaic, we build websites, apps and digital products that help businesses grow. 
+                      Whether you're a startup or an enterprise, we have the skills and expertise to help you succeed.
+                    </p>
+                    <div class="pt-4">
+                      <a href="get-started.html">
+                        <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-[#1980e6] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#1463b5] transition-colors duration-200">
+                          <span class="truncate">Get Started</span>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Right Column -->
+                  <div class="flex flex-1 items-center justify-center mt-6 md:mt-0">
+                    <div class="w-full h-full bg-center bg-no-repeat bg-cover rounded-xl" 
+                         style="background-image: url('Screenshot\ 2024-10-29\ at\ 18.33.13.png');">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] px-4 pb-1 pt-2">
+                Featured Services
+              </h1>
+              <div class="relative">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+                  <!-- Changed to a simpler structure for the carousel -->
+                  <div class="carousel-container overflow-hidden md:contents">
+                    <div class="flex md:contents gap-3 transition-transform duration-300">
+                      <!-- Each service card -->
+                      <div class="flex-shrink-0 w-full md:contents">
+                        <div class="flex flex-col gap-3 pb-3">
+                          <!-- First card content -->
+                          <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                            style="background-image: url('https://cdn.usegalileo.ai/stability/2431eb60-0779-431e-9cfc-db69bbbfdde3.png');">
+                          </div>
+                          <div>
+                            <p class="text-white text-base font-medium leading-normal">
+                              Mobile App Development
+                            </p>
+                            <p class="text-[#93adc8] text-sm font-normal leading-normal">
+                              We design and develop custom mobile apps for iOS and Android that are intuitive, engaging, and built to scale.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="flex-shrink-0 w-full md:contents">
+                        <div class="flex flex-col gap-3 pb-3">
+                          <!-- Second card content -->
+                          <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                            style="background-image: url('https://cdn.usegalileo.ai/stability/2df6aa43-d1c8-42dd-affa-3f1e6e3027b7.png');">
+                          </div>
+                          <div>
+                            <p class="text-white text-base font-medium leading-normal">
+                              Web Development
+                            </p>
+                            <p class="text-[#93adc8] text-sm font-normal leading-normal">
+                              Our web development services include front-end and back-end development, e-commerce solutions, and more.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="flex-shrink-0 w-full md:contents">
+                        <div class="flex flex-col gap-3 pb-3">
+                          <!-- Third card content -->
+                          <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                            style="background-image: url('https://cdn.usegalileo.ai/stability/111d8846-f471-4949-90dc-9498841cf7b6.png');">
+                          </div>
+                          <div>
+                            <p class="text-white text-base font-medium leading-normal">
+                              Digital Product Design
+                            </p>
+                            <p class="text-[#93adc8] text-sm font-normal leading-normal">
+                              We create beautiful, user-friendly digital products that drive results and deliver a seamless user experience.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="flex-shrink-0 w-full md:contents">
+                        <div class="flex flex-col gap-3 pb-3">
+                          <!-- Fourth card content -->
+                          <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                            style="background-image: url('https://cdn.usegalileo.ai/stability/f97dfaca-be8d-465d-889e-1c41632cb225.png');">
+                          </div>
+                          <div>
+                            <p class="text-white text-base font-medium leading-normal">
+                              Custom Software Solutions
+                            </p>
+                            <p class="text-[#93adc8] text-sm font-normal leading-normal">
+                              From CRM systems to AI-powered chatbots, we develop custom software solutions that solve complex business challenges.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Navigation buttons (mobile only) -->
+                <div class="flex justify-between absolute top-1/2 -translate-y-1/2 w-full px-2 md:hidden">
+                  <button class="carousel-prev bg-[#1980e6] rounded-full p-2 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                  </button>
+                  <button class="carousel-next bg-[#1980e6] rounded-full p-2 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="@container">
+              <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] px-4 pb-2 pt-3">Testimonials</h1>
+              <div class="relative">
+                <div class="carousel-container-testimonials overflow-hidden bg-[#111a22] px-12 py-4 md:p-4">
+                  <div class="flex flex-row md:flex-col gap-16 md:gap-8 transition-transform duration-300">
+                    <!-- First Testimonial -->
+                    <div class="flex-shrink-0 w-full flex flex-col gap-3 bg-[#111a22] max-w-2xl mx-auto">
+                      <div class="flex items-center gap-3">
+                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                          style='background-image: url("https://cdn.usegalileo.ai/stability/8c6773bd-3c54-40bd-b9d5-fc9bceacce50.png");'>
+                        </div>
+                        <div class="flex-1">
+                          <p class="text-white text-base font-medium leading-normal">Maggie Johnson</p>
+                          <p class="text-[#93adc8] text-sm font-normal leading-normal">July 20, 2022</p>
+                        </div>
+                      </div>
+                      <div class="flex gap-0.5">
+                        <div class="text-[#1980e6]" data-icon="Star" data-size="20px" data-weight="fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="text-[#1980e6]" data-icon="Star" data-size="20px" data-weight="fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="text-[#1980e6]" data-icon="Star" data-size="20px" data-weight="fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="text-[#1980e6]" data-icon="Star" data-size="20px" data-weight="fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="text-[#1980e6]" data-icon="Star" data-size="20px" data-weight="fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <p class="text-white text-base font-normal leading-normal">
+                        I'm so happy with the website that Webflow built for my business. I've received nothing but compliments. The process was easy and the results were amazing.
+                      </p>
+                      <div class="flex gap-9 text-[#93adc8]">
+                        <button class="flex items-center gap-2">
+                          <div class="text-inherit" data-icon="ThumbsUp" data-size="20px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                              <path
+                                d="M234,80.12A24,24,0,0,0,216,72H160V56a40,40,0,0,0-40-40,8,8,0,0,0-7.16,4.42L75.06,96H32a16,16,0,0,0-16,16v88a16,16,0,0,0,16,16H204a24,24,0,0,0,23.82-21l12-96A24,24,0,0,0,234,80.12ZM32,112H72v88H32ZM223.94,97l-12,96a8,8,0,0,1-7.94,7H88V105.89l36.71-73.43A24,24,0,0,1,144,56V80a8,8,0,0,0,8,8h64a8,8,0,0,1,7.94,9Z"
+                              ></path>
+                            </svg>
+                          </div>
+                          <p class="text-inherit">5</p>
+                        </button>
+                        <button class="flex items-center gap-2">
+                          <div class="text-inherit" data-icon="ThumbsDown" data-size="20px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                              <path
+                                d="M239.82,157l-12-96A24,24,0,0,0,204,40H32A16,16,0,0,0,16,56v88a16,16,0,0,0,16,16H75.06l37.78,75.58A8,8,0,0,0,120,240a40,40,0,0,0,40-40V184h56a24,24,0,0,0,23.82-27ZM72,144H32V56H72Zm150,21.29a7.88,7.88,0,0,1-6,2.71H152a8,8,0,0,0-8,8v24a24,24,0,0,1-19.29,23.54L88,150.11V56H204a8,8,0,0,1,7.94,7l12,96A7.87,7.87,0,0,1,222,165.29Z"
+                              ></path>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Second Testimonial -->
+                    <div class="flex-shrink-0 w-full flex flex-col gap-3 bg-[#111a22] max-w-2xl mx-auto">
+                      <div class="flex items-center gap-3">
+                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                          style='background-image: url(&quot;https://cdn.usegalileo.ai/stability/8a1168a5-ff15-4667-b0b8-f39b6e71507d.png&quot;);'>
+                        </div>
+                        <div class="flex-1">
+                          <p class="text-white text-base font-medium leading-normal">John Smith</p>
+                          <p class="text-[#93adc8] text-sm font-normal leading-normal">August 15, 2022</p>
+                        </div>
+                      </div>
+                      <div class="flex gap-0.5">
+                        <div class="text-[#1980e6]" data-icon="Star" data-size="20px" data-weight="fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="text-[#1980e6]" data-icon="Star" data-size="20px" data-weight="fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="text-[#1980e6]" data-icon="Star" data-size="20px" data-weight="fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="text-[#1980e6]" data-icon="Star" data-size="20px" data-weight="fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="text-[#1980e6]" data-icon="Star" data-size="20px" data-weight="fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <p class="text-white text-base font-normal leading-normal">
+                        The mobile app they developed exceeded our expectations. Their team was professional and delivered on time. Highly recommended!
+                      </p>
+                      <div class="flex gap-9 text-[#93adc8]">
+                        <button class="flex items-center gap-2">
+                          <div class="text-inherit" data-icon="ThumbsUp" data-size="20px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                              <path
+                                d="M234,80.12A24,24,0,0,0,216,72H160V56a40,40,0,0,0-40-40,8,8,0,0,0-7.16,4.42L75.06,96H32a16,16,0,0,0-16,16v88a16,16,0,0,0,16,16H204a24,24,0,0,0,23.82-21l12-96A24,24,0,0,0,234,80.12ZM32,112H72v88H32ZM223.94,97l-12,96a8,8,0,0,1-7.94,7H88V105.89l36.71-73.43A24,24,0,0,1,144,56V80a8,8,0,0,0,8,8h64a8,8,0,0,1,7.94,9Z"
+                              ></path>
+                            </svg>
+                          </div>
+                          <p class="text-inherit">5</p>
+                        </button>
+                        <button class="flex items-center gap-2">
+                          <div class="text-inherit" data-icon="ThumbsDown" data-size="20px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                              <path
+                                d="M239.82,157l-12-96A24,24,0,0,0,204,40H32A16,16,0,0,0,16,56v88a16,16,0,0,0,16,16H75.06l37.78,75.58A8,8,0,0,0,120,240a40,40,0,0,0,40-40V184h56a24,24,0,0,0,23.82-27ZM72,144H32V56H72Zm150,21.29a7.88,7.88,0,0,1-6,2.71H152a8,8,0,0,0-8,8v24a24,24,0,0,1-19.29,23.54L88,150.11V56H204a8,8,0,0,1,7.94,7l12,96A7.87,7.87,0,0,1,222,165.29Z"
+                              ></path>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Third Testimonial -->
+                    <div class="flex-shrink-0 w-full flex flex-col gap-3 bg-[#111a22] max-w-2xl mx-auto">
+                      <div class="flex items-center gap-3">
+                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                          style='background-image: url(&quot;https://cdn.usegalileo.ai/stability/1bcf6d5d-9ab7-46b5-8ad2-478cc9be80af.png&quot;);'>
+                        </div>
+                        <div class="flex-1">
+                          <p class="text-white text-base font-medium leading-normal">Sarah Wilson</p>
+                          <p class="text-[#93adc8] text-sm font-normal leading-normal">September 5, 2022</p>
+                        </div>
+                      </div>
+                      <div class="flex gap-0.5">
+                        <div class="text-[#1980e6]" data-icon="Star" data-size="20px" data-weight="fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="text-[#1980e6]" data-icon="Star" data-size="20px" data-weight="fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="text-[#1980e6]" data-icon="Star" data-size="20px" data-weight="fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="text-[#1980e6]" data-icon="Star" data-size="20px" data-weight="fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="text-[#1980e6]" data-icon="Star" data-size="20px" data-weight="fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                            <path
+                              d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <p class="text-white text-base font-normal leading-normal">
+                        Outstanding service! They helped us transform our digital presence completely. The team was responsive and professional throughout the project.
+                      </p>
+                      <div class="flex gap-9 text-[#93adc8]">
+                        <button class="flex items-center gap-2">
+                          <div class="text-inherit" data-icon="ThumbsUp" data-size="20px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                              <path
+                                d="M234,80.12A24,24,0,0,0,216,72H160V56a40,40,0,0,0-40-40,8,8,0,0,0-7.16,4.42L75.06,96H32a16,16,0,0,0-16,16v88a16,16,0,0,0,16,16H204a24,24,0,0,0,23.82-21l12-96A24,24,0,0,0,234,80.12ZM32,112H72v88H32ZM223.94,97l-12,96a8,8,0,0,1-7.94,7H88V105.89l36.71-73.43A24,24,0,0,1,144,56V80a8,8,0,0,0,8,8h64a8,8,0,0,1,7.94,9Z"
+                              ></path>
+                            </svg>
+                          </div>
+                          <p class="text-inherit">5</p>
+                        </button>
+                        <button class="flex items-center gap-2">
+                          <div class="text-inherit" data-icon="ThumbsDown" data-size="20px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                              <path
+                                d="M239.82,157l-12-96A24,24,0,0,0,204,40H32A16,16,0,0,0,16,56v88a16,16,0,0,0,16,16H75.06l37.78,75.58A8,8,0,0,0,120,240a40,40,0,0,0,40-40V184h56a24,24,0,0,0,23.82-27ZM72,144H32V56H72Zm150,21.29a7.88,7.88,0,0,1-6,2.71H152a8,8,0,0,0-8,8v24a24,24,0,0,1-19.29,23.54L88,150.11V56H204a8,8,0,0,1,7.94,7l12,96A7.87,7.87,0,0,1,222,165.29Z"
+                              ></path>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Navigation buttons -->
+                <div class="flex justify-between absolute top-1/2 -translate-y-1/2 w-full px-2 md:hidden">
+                  <button class="carousel-prev-testimonials bg-[#1980e6] rounded-full p-2 text-white -translate-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                  </button>
+                  <button class="carousel-next-testimonials bg-[#1980e6] rounded-full p-2 text-white translate-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] px-4 pb-2 pt-3">Our process</h1>
+            <div class="grid grid-cols-[40px_1fr] gap-x-2 px-4">
+              <!-- Process steps -->
+              <div class="flex flex-col items-center gap-1 pt-3">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-6"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/ae71e482-3298-473a-9bf2-0ce7d40b3ea5.png");'
+                  ></div>
+                  <div class="w-[1.5px] bg-[#344d65] h-2 grow"></div>
+                </div>
+                <div class="flex flex-1 flex-col py-3">
+                  <p class="text-white text-base font-medium leading-normal">Define your goals</p>
+                  <p class="text-[#93adc8] text-base font-normal leading-normal">
+                    Meet with a Webflow expert to discuss your business objectives and how we can help you achieve them.
+                  </p>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                  <div class="w-[1.5px] bg-[#344d65] h-2"></div>
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-6"
+                    style='background-image: url("https://cdn.usegalileo.ai/stability/42c3998a-9d26-4d3c-a434-bea2c157e14e.png");'
+                  ></div>
+                  <div class="w-[1.5px] bg-[#344d65] h-2 grow"></div>
+                </div>
+                <div class="flex flex-1 flex-col py-3">
+                  <p class="text-white text-base font-medium leading-normal">Design your site</p>
+                  <p class="text-[#93adc8] text-base font-normal leading-normal">
+                    Work with our talented designers to create a custom website that reflects your brand and resonates with your audience.
+                  </p>
+                </div>
+                <div class="flex flex-col items-center gap-1 pb-3">
+                  <div class="w-[1.5px] bg-[#344d65] h-2"></div>
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-6"
+                    style='background-image: url("https://cdn.usegalileo.ai/stability/3a80998d-ef3b-4dab-9f32-68694246ab2d.png");'
+                  ></div>
+                </div>
+                <div class="flex flex-1 flex-col py-3">
+                  <p class="text-white text-base font-medium leading-normal">Launch and iterate</p>
+                  <p class="text-[#93adc8] text-base font-normal leading-normal">
+                    Get your website up and running quickly with Webflow's powerful hosting platform. Then, use our analytics and A/B testing tools to refine your site and optimize
+                    your results.
+                  </p>
+                </div>
+              </div>
+
+            <div class="@container">
+              <div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
+                <div class="flex flex-col gap-2 text-center mx-auto">
+                  <h1
+                    class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px] mx-auto"
+                  >
+                    Ready to turn your idea into a reality?
+                  </h1>
+                </div>
+                <div class="flex flex-1 justify-center">
+                  <div class="flex justify-center">
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1980e6] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow"
+                    >
+                      <span class="truncate">Contact Us</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] px-4 pb-2 pt-4">Featured Posts</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 p-4">
+              <!-- First Post -->
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style="background-image: url('https://cdn.usegalileo.ai/sdxl10/2df0cd5e-2f8b-4d1a-986c-222cb50eead7.png');">
+                </div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">
+                    What is a Composable Website?
+                  </p>
+                  <p class="text-[#93adc8] text-sm font-normal leading-normal">
+                    Composable Websites are built by assembling pre-built components from various sources into a single website. This approach makes it possible to create
+                    highly performant, scalable, and flexible websites.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Second Post -->
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style="background-image: url('https://cdn.usegalileo.ai/stability/b7f2d20a-2a8d-4e94-8524-a03288586df4.png');">
+                </div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">
+                    The Future of Web Development: Trends to Watch in 2022
+                  </p>
+                  <p class="text-[#93adc8] text-sm font-normal leading-normal">
+                    With new technologies and user expectations shaping the digital landscape, web development is evolving at a rapid pace. In this post, we explore the top web development trends to watch in 2022 and beyond.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Third Post -->
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style="background-image: url('https://cdn.usegalileo.ai/stability/0408d38f-3939-4ea8-b620-5c5505473bcd.png');">
+                </div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">
+                    How to Build a Successful Mobile App: A Step-by-Step Guide
+                  </p>
+                  <p class="text-[#93adc8] text-sm font-normal leading-normal">
+                    Building a successful mobile app requires careful planning, strategic design, and flawless execution. In this step-by-step guide, we walk you through the process of creating a mobile app that users will love.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Fourth Post -->
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style="background-image: url('https://cdn.usegalileo.ai/stability/d57efa53-e839-4de9-b97d-349529fd6df2.png');">
+                </div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">
+                    Designing for Accessibility: Best Practices for Inclusive UX
+                  </p>
+                  <p class="text-[#93adc8] text-sm font-normal leading-normal">
+                    Designing for accessibility is not only a legal requirement, but also a moral imperative. In this post, we share best practices for creating inclusive user experiences that accommodate a diverse range of users.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex px-4 py-3">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 flex-1 bg-[#243647] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">View All Posts</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer
+              class="flex flex-col gap-6 px-5 py-10 text-center @container"
+            >
+              <div
+                class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around"
+              >
+                <a
+                  class="text-[#93adc8] text-base font-normal leading-normal min-w-40"
+                  href="#"
+                  >Privacy Policy</a
+                >
+                <a
+                  class="text-[#93adc8] text-base font-normal leading-normal min-w-40"
+                  href="#"
+                  >Terms of Service</a
+                >
+              </div>
+              <p class="text-[#93adc8] text-base font-normal leading-normal">
+                @2022 Code Build
+              </p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (!menuButton || !mobileMenu) {
+          console.error('Menu elements not found!');
+          return;
+        }
+
+        menuButton.addEventListener('click', toggleMenu);
+        menuButton.addEventListener('touchend', function(e) {
+          e.preventDefault();
+          toggleMenu();
+        });
+
+        function toggleMenu() {
+          console.log('Toggle menu clicked');
+          
+          if (mobileMenu.classList.contains('hidden')) {
+            console.log('Showing menu');
+            mobileMenu.classList.remove('hidden');
+            mobileMenu.classList.add(
+              'flex',
+              'flex-col',
+              'absolute',
+              'top-16',
+              'left-0',
+              'right-0',
+              'bg-[#111a22]',
+              'p-4',
+              'border-b',
+              'border-[#243647]',
+              'z-50',
+              'gap-2'
+            );
+          } else {
+            console.log('Hiding menu');
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove(
+              'flex',
+              'flex-col',
+              'absolute',
+              'top-16',
+              'left-0',
+              'right-0',
+              'bg-[#111a22]',
+              'p-4',
+              'border-b',
+              'border-[#243647]',
+              'z-50',
+              'gap-2'
+            );
+          }
+        }
+
+        // Services Carousel
+        const servicesContainer = document.querySelector('.carousel-container .flex');
+        const prevButton = document.querySelector('.carousel-prev');
+        const nextButton = document.querySelector('.carousel-next');
+        let currentServiceIndex = 0;
+        
+        function updateServicesCarousel() {
+          if (window.innerWidth < 768) { // mobile only
+            const slideWidth = servicesContainer.children[0].offsetWidth;
+            servicesContainer.style.transform = `translateX(-${currentServiceIndex * slideWidth}px)`;
+          } else {
+            servicesContainer.style.transform = 'translateX(0)';
+          }
+        }
+
+        prevButton?.addEventListener('click', () => {
+          if (currentServiceIndex > 0) {
+            currentServiceIndex--;
+            updateServicesCarousel();
+          }
+        });
+
+        nextButton?.addEventListener('click', () => {
+          if (currentServiceIndex < servicesContainer.children.length - 1) {
+            currentServiceIndex++;
+            updateServicesCarousel();
+          }
+        });
+
+        // Testimonials Carousel
+        const testimonialsContainer = document.querySelector('.carousel-container-testimonials .flex');
+        const prevTestButton = document.querySelector('.carousel-prev-testimonials');
+        const nextTestButton = document.querySelector('.carousel-next-testimonials');
+        let currentTestimonialIndex = 0;
+
+        function updateTestimonialsCarousel() {
+          if (window.innerWidth < 768) { // mobile only
+            const slideWidth = testimonialsContainer.children[0].offsetWidth;
+            testimonialsContainer.style.transform = `translateX(-${currentTestimonialIndex * slideWidth}px)`;
+          } else {
+            testimonialsContainer.style.transform = 'translateX(0)';
+          }
+        }
+
+        prevTestButton?.addEventListener('click', () => {
+          if (currentTestimonialIndex > 0) {
+            currentTestimonialIndex--;
+            updateTestimonialsCarousel();
+          }
+        });
+
+        nextTestButton?.addEventListener('click', () => {
+          if (currentTestimonialIndex < testimonialsContainer.children.length - 1) {
+            currentTestimonialIndex++;
+            updateTestimonialsCarousel();
+          }
+        });
+
+        // Reset carousel on window resize
+        window.addEventListener('resize', () => {
+          currentServiceIndex = 0;
+          currentTestimonialIndex = 0;
+          updateServicesCarousel();
+          updateTestimonialsCarousel();
+        });
+      });
+    </script>
+  </body>
+</html>

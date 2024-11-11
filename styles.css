@@ -1,0 +1,33 @@
+/* Make containers responsive */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add media queries for different screen sizes */
+@media screen and (max-width: 768px) {
+    /* Adjustments for tablets and mobile phones */
+    body {
+        font-size: 16px;
+    }
+    
+    /* Ensure proper padding on mobile */
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Specific adjustments for mobile phones */
+    body {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Monzaic</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap"
+    />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDggNDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTQyLjQzNzkgNDRDNDIuNDM3OSA0NCAzNi4wNzQ0IDMzLjkwMzggNDEuMTY5MiAyNEM0Ni44NjI0IDEyLjkzMzYgNDIuMjA3OCA0IDQyLjIwNzggNEw3LjAxMTM0IDRDNC4wMTEzNCA0IDExLjY1NzcgMTIuOTMyIDUuOTY5MTIgMjMuOTk2OUMwLjg3NjI3MyAzMy45MDI5IDcuMjcwOTQgNDQgNy4yNzA5NCA0NEw0Mi40Mzc5IDQ0WiIgZmlsbD0iIzE5ODBlNiIvPjwvc3ZnPg==" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#1980e6">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Manrope, "Noto Sans", sans-serif;
+            background-color: #111a22;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #1980e6;
+        }
+
+        .cta-button {
+            background-color: #1980e6;
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.875rem;
+        }
+
+        .cta-button:hover {
+            background-color: #1463b5;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(to bottom, rgba(26,38,50,0.8), #111a22);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: #93adc8;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.125rem;
+            line-height: 1.6;
+        }
+
+        .portfolio-grid {
+            column-count: 4;
+            column-gap: 24px;
+            padding: 4rem 0;
+        }
+
+        .portfolio-item {
+            break-inside: avoid;
+            margin-bottom: 24px;
+            background-color: #1a2632;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            transition: transform 0.2s ease;
+            border: 1px solid #243647;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-4px);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .portfolio-item-content {
+            padding: 1rem;
+        }
+
+        .portfolio-item h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 0 0 0.5rem 0;
+            color: #ffffff;
+        }
+
+        .portfolio-item p {
+            font-size: 0.875rem;
+            color: #93adc8;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 1200px) {
+            .portfolio-grid {
+                column-count: 3;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .portfolio-grid {
+                column-count: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#111a22] dark group/design-root overflow-x-hidden" style="font-family: Manrope, 'Noto Sans', sans-serif">
+        <div class="layout-container flex h-full grow flex-col">
+            <header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#243647] px-4 md:px-10 py-3 bg-[#111a22]">
+                <div class="flex items-center gap-4 text-white">
+                    <a href="index.html" class="flex items-center gap-4 text-white hover:text-[#1980e6] transition-colors duration-200">
+                        <div class="size-4">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Monzaic</h2>
+                    </a>
+                </div>
+                <div class="flex flex-1 justify-end gap-8">
+                    <div id="mobile-menu" class="hidden md:flex items-center gap-9">
+                        <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="prices.html">Services</a>
+                        <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="portfolio.html">Portfolio</a>
+                        <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="blog.html">Blog</a>
+                        <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="about-us.html">About Us</a>
+                        <a class="text-white text-sm font-medium leading-normal hover:text-[#1980e6] transition-colors duration-200 block w-full py-2" href="contact.html">Contact Us</a>
+                    </div>
+                    <button id="mobile-menu-button" class="md:hidden text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                    <a href="get-started.html">
+                        <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#1980e6] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#1463b5] transition-colors duration-200">
+                            <span class="truncate">Get Started</span>
+                        </button>
+                    </a>
+                </div>
+            </header>
+
+            <section class="hero">
+                <div class="container">
+                    <h1>Our Work</h1>
+                    <p>We design and develop websites that are beautiful, functional, and easy to use. Here's a selection of our recent projects.</p>
+                </div>
+            </section>
+            
+            <div class="container">
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio1.png" alt="E-commerce Platform">
+                        <div class="portfolio-item-content">
+                            <h3>E-commerce Platform</h3>
+                            <p>Modern online shopping experience with advanced features</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio2.png" alt="Business Dashboard">
+                        <div class="portfolio-item-content">
+                            <h3>Business Dashboard</h3>
+                            <p>Real-time analytics and reporting interface</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio3.png" alt="Mobile Application">
+                        <div class="portfolio-item-content">
+                            <h3>Mobile Application</h3>
+                            <p>User-friendly mobile app with seamless navigation</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio4.png" alt="Content Platform">
+                        <div class="portfolio-item-content">
+                            <h3>Content Platform</h3>
+                            <p>Digital content management system</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio5.png" alt="Social Media App">
+                        <div class="portfolio-item-content">
+                            <h3>Social Media App</h3>
+                            <p>Connecting people through shared interests</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio6.png" alt="Fitness Tracker">
+                        <div class="portfolio-item-content">
+                            <h3>Fitness Tracker</h3>
+                            <p>Personal health and wellness monitoring</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio7.png" alt="Travel Planner">
+                        <div class="portfolio-item-content">
+                            <h3>Travel Planner</h3>
+                            <p>Comprehensive trip organization tool</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio8.png" alt="Recipe Finder">
+                        <div class="portfolio-item-content">
+                            <h3>Recipe Finder</h3>
+                            <p>Culinary inspiration and meal planning</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio9.png" alt="Weather App">
+                        <div class="portfolio-item-content">
+                            <h3>Weather App</h3>
+                            <p>Real-time weather forecasts and alerts</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio10.png" alt="Task Manager">
+                        <div class="portfolio-item-content">
+                            <h3>Task Manager</h3>
+                            <p>Efficient personal and team productivity tool</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio11.png" alt="Music Streaming">
+                        <div class="portfolio-item-content">
+                            <h3>Music Streaming</h3>
+                            <p>Personalized music discovery and playback</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio12.png" alt="News Aggregator">
+                        <div class="portfolio-item-content">
+                            <h3>News Aggregator</h3>
+                            <p>Curated news from multiple sources</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio13.png" alt="Enterprise Solution">
+                        <div class="portfolio-item-content">
+                            <h3>Enterprise Solution</h3>
+                            <p>Comprehensive business management platform</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio14.png" alt="IoT Dashboard">
+                        <div class="portfolio-item-content">
+                            <h3>IoT Dashboard</h3>
+                            <p>Connected device management system</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio15.png" alt="AI Platform">
+                        <div class="portfolio-item-content">
+                            <h3>AI Platform</h3>
+                            <p>Machine learning and data analytics solution</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio16.png" alt="Virtual Reality Experience">
+                        <div class="portfolio-item-content">
+                            <h3>Virtual Reality Experience</h3>
+                            <p>Immersive 3D environments and interactions</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio17.png" alt="Cryptocurrency Exchange">
+                        <div class="portfolio-item-content">
+                            <h3>Cryptocurrency Exchange</h3>
+                            <p>Secure digital asset trading platform</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio18.png" alt="Smart Home Control">
+                        <div class="portfolio-item-content">
+                            <h3>Smart Home Control</h3>
+                            <p>Integrated home automation system</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio19.png" alt="Language Learning App">
+                        <div class="portfolio-item-content">
+                            <h3>Language Learning App</h3>
+                            <p>Interactive language acquisition tool</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio20.png" alt="Augmented Reality Game">
+                        <div  class="portfolio-item-content">
+                            <h3>Augmented Reality Game</h3>
+                            <p>Blending digital and physical  worlds</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio21.png" alt="Video Conferencing Tool">
+                        <div class="portfolio-item-content">
+                            <h3>Video Conferencing Tool</h3>
+                            <p>Seamless remote communication platform</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio22.png" alt="CRM System">
+                        <div class="portfolio-item-content">
+                            <h3>CRM System</h3>
+                            <p>Customer relationship management platform</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio23.png" alt="Healthcare Portal">
+                        <div class="portfolio-item-content">
+                            <h3>Healthcare Portal</h3>
+                            <p>Medical services management system</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio24.png" alt="Education Platform">
+                        <div class="portfolio-item-content">
+                            <h3>Education Platform</h3>
+                            <p>Online learning management system</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio25.png" alt="Inventory Management">
+                        <div class="portfolio-item-content">
+                            <h3>Inventory Management</h3>
+                            <p>Real-time stock tracking and optimization</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio26.png" alt="Event Planning App">
+                        <div class="portfolio-item-content">
+                            <h3>Event Planning App</h3>
+                            <p>Comprehensive event organization tool</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio27.png" alt="Cybersecurity Dashboard">
+                        <div class="portfolio-item-content">
+                            <h3>Cybersecurity Dashboard</h3>
+                            <p>Advanced threat detection and prevention</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio28.png" alt="Freelance Marketplace">
+                        <div class="portfolio-item-content">
+                            <h3>Freelance Marketplace</h3>
+                            <p>Connecting talent with opportunities</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio29.png" alt="Meditation App">
+                        <div class="portfolio-item-content">
+                            <h3>Meditation App</h3>
+                            <p>Guided relaxation and mindfulness exercises</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio30.png" alt="Real Estate Platform">
+                        <div class="portfolio-item-content">
+                            <h3>Real Estate Platform</h3>
+                            <p>Property listing and management system</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio31.png" alt="Supply Chain Management">
+                        <div class="portfolio-item-content">
+                            <h3>Supply Chain Management</h3>
+                            <p>End-to-end logistics optimization solution</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio32.png" alt="Podcast Hosting Platform">
+                        <div class="portfolio-item-content">
+                            <h3>Podcast Hosting Platform</h3>
+                            <p>Audio content creation and distribution</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="portfolioimages/portfolio33.png" alt="Sustainable Energy Monitor">
+                        <div class="portfolio-item-content">
+                            <h3>Sustainable Energy Monitor</h3>
+                            <p>Renewable energy tracking and optimization</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Script loaded');
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            console.log('menuButton:', menuButton);
+            console.log('mobileMenu:', mobileMenu);
+            
+            if (!menuButton || !mobileMenu) {
+                console.error('Menu elements not found!');
+                return;
+            }
+
+            menuButton.addEventListener('click', toggleMenu);
+            menuButton.addEventListener('touchend', function(e) {
+                e.preventDefault();
+                toggleMenu();
+            });
+
+            function toggleMenu() {
+                console.log('Toggle menu clicked');
+                
+                if (mobileMenu.classList.contains('hidden')) {
+                    console.log('Showing menu');
+                    mobileMenu.classList.remove('hidden');
+                    mobileMenu.classList.add(
+                        'flex',
+                        'flex-col',
+                        'absolute',
+                        'top-16',
+                        'left-0',
+                        'right-0',
+                        'bg-[#111a22]',
+                        'p-4',
+                        'border-b',
+                        'border-[#243647]',
+                        'z-50',
+                        'gap-2'
+                    );
+                } else {
+                    console.log('Hiding menu');
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove(
+                        'flex',
+                        'flex-col',
+                        'absolute',
+                        'top-16',
+                        'left-0',
+                        'right-0',
+                        'bg-[#111a22]',
+                        'p-4',
+                        'border-b',
+                        'border-[#243647]',
+                        'z-50',
+                        'gap-2'
+                    );
+                }
+            }
+        });
+    </script>
+</body>
+</html>
